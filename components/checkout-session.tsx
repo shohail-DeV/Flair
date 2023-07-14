@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect } from "react"
 import { CheckCheck, XCircle } from "lucide-react"
@@ -17,7 +17,7 @@ const { clearCart } = useShoppingCart();
     if(customerDetails){
       clearCart();
     }
-  }, [customerDetails])
+  }, [[clearCart, customerDetails]])
 
   if (!customerDetails) {
     return (

@@ -67,7 +67,7 @@ toast({
         {product.sizes.map((size) => (
           <Button onClick={() => setSelectedSize(size)} 
           key={size}
-          variant={selectedSize === size ? "default " : "outline"} 
+          variant={selectedSize === size ? "default" : "outline"}
           className="mr-2 mt-4">
             {getSizeName(size)}
           </Button>
